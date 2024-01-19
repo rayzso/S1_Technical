@@ -1,0 +1,75 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; 
+    color: black; 
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header, .bio, .education, .skills {
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.header img {
+    max-width: 150px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    padding-top: 30px;
+    font-weight: bold; 
+    font-size: 1.5em; 
+}
+
+.details {
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.details p {
+    margin: 5px 0;
+}
+
+.bio, .education, .skills {
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    background-color: #e9e9e9;
+    padding: 5px 10px;
+    margin: -15px -15px 15px -15px;
+    font-weight: bold; 
+    font-size: 1.2em; 
+}
+
+.skills .skill {
+    margin-bottom: 10px;
+}
+
+.skills .progress-bar {
+    height: 15px;
+    background-color: #4CAF50;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.skills p {
+    margin: 0;
+    font-weight: bold; 
+    font-size: 1.1em; 
+}
+
+#colorChangeButton {
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+}

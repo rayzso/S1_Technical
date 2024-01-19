@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Russel Ray A. Colarina's Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t39.30808-6/343659308_139638605663347_660646304712136525_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=b5y8goK7IgoAX94eiI6&_nc_ht=scontent.fmnl4-3.fna&oh=00_AfBvFj6K30yoQv-9rFW4d3xW6oMEsvfL293QlcNJst9G2A&oe=65AFD5D0" alt="Russel Ray A. Colarina">
+            <h1>Russel Ray A. Colarina</h1>
+            <div class="details">
+                <p>Student</p>
+                <p>Mobile number: 0939 718 3951</p>
+                <p>Address: Manila City</p>
+                <p>Email Address: 202210548@fit.edu.ph</p>
+            </div>
+        </div>
+        
+        <div class="bio">
+            <div class="section-title">Short Biography</div>
+            <p>
+                A 20-year-old college student from Occidental Mindoro, Philippines and is currently pursuing his second year of Bachelor of Science in Information Technology specialized in Web and Mobile Application at FEU Institute of Technology, one of the leading technological schools in the country. Has a passion for graphic design and computer skills, and he enjoys learning innovative and user-friendly web and mobile applications. He hopes to use his talents and knowledge to contribute to the development of the IT industry in the Philippines and beyond.
+            </p>
+        </div>
+
+        <div class="education">
+            <div class="section-title">Academic Background</div>
+            <p>Aug 2022 – Present:<br>
+                FEU Institute of Technology, Bachelor of Science in Information Technology</p>
+            <p>Jun 2016 - Jan 2022:<br>
+                Occidental Mindoro National High School, Secondary</p>
+            <p>Jun 2010 - Jun 2016:<br>
+                Mamburao Central School, Primary</p>
+        </div>
+
+        <div class="skills">
+            <div class="section-title">Skills</div>
+            <div class="skill">
+                <p>Graphic Design</p>
+                <div class="progress-bar" style="width: 90%;"></div>
+            </div>
+            <div class="skill">
+                <p>Web Design</p>
+                <div class="progress-bar" style="width: 80%;"></div>
+            </div>
+            <div class="skill">
+                <p>Web Development</p>
+                <div class="progress-bar" style="width: 80%;"></div>
+            </div>
+            <div class="skill">
+                <p>Computer Programming</p>
+                <div class="progress-bar" style="width: 80%;"></div>
+            </div>
+            <div class="skill">
+                <p>Video Editing</p>
+                <div class="progress-bar" style="width: 85%;"></div>
+            </div>
+        </div>
+    </div>
+
+<button id="colorChangeButton" onclick="changeColors()">Change Colors</button>
+
+    <script>
+        function changeColors() {
+            const body = document.body;
+
+            const randomColor = () => Math.floor(Math.random() * 256);
+            const bgColor = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
+
+            const textColor = `rgb(${255 - randomColor()}, ${255 - randomColor()}, ${255 - randomColor()})`;
+
+            body.style.backgroundColor = bgColor;
+            body.style.color = textColor;
+        }
+    </script>
+</body>
+</html>
